@@ -1,0 +1,61 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore Agent folders
+.agents/
+.trae/
+.cursor/
+
+# Config/Env variables
+.env
+.env.*
+
+# Supabase
+supabase/
+repomix-output.xml
+repomix-output.txt
+.repomixignore
+CLAUDE.md
+.claudeignore
+repomix.config.ts
+repomix.config.json
+original_twb_part.txt
+perfil-github/
+.rtk/
+database/
+trello_reference.py
+
+tableau_data/
+tableau/
+
+datos_tableau_civicreport.csv
+
+scratch/
+
+# Java / Maven local toolchain
+tools/apache-maven-*/
+tools/cuda-deps/
+backend/**/target/
+backend/biometric-service/src/main/resources/models/*.onnx
