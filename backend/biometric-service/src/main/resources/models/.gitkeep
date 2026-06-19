@@ -1,0 +1,3 @@
+# Place ONNX models here (not committed — see README.md):
+# - anti_spoof.onnx
+# - face_embedding.onnx

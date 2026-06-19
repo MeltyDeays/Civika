@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: civicreport-biometric-service
+
+biometric:
+  cors:
+    allowed-origins: "http://localhost:5173,http://127.0.0.1:5173"
+  onnx:
+    use-gpu: true
+    gpu-device-id: 0
+  detection:
+    iou-thresh: 0.4
+  thresholds:
+    laplacian-variance-min: 45.0
+    moire-score-max: 0.75
+    onnx-spoof-min: 0.85
+    face-match-min: 0.35
+    cedula-face-match-min: 0.85
+    histogram-face-match-min: 0.12
+  models:
+    anti-spoof: classpath:models/anti_spoof.onnx
+    face-embedding: classpath:models/face_embedding.onnx
+    face-detector: classpath:models/face_detector.onnx
+  demo-mode: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
